@@ -1,0 +1,39 @@
+{
+  "name": "dsh-desktop-organizer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "整理 Windows 桌面：按类别归类快捷方式，找出没在桌面建快捷方式的已安装程序，检测失效快捷方式。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./scan": "./scan.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "meta": {
+    "title": "桌面整理",
+    "description": "归类桌面快捷方式、发现未建快捷方式的程序、检测失效链接。"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "desktop",
+    "organizer",
+    "windows"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrogFlaying/dsh-desktop-organizer.git"
+  }
+}
